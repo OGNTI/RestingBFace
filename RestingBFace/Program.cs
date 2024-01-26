@@ -6,7 +6,7 @@ RestClient client = new("https://swapi.py4e.com/api/");
 
 while (true)
 {
-    Console.WriteLine("Write a number");
+    Console.WriteLine("Write a number of a Star Wars character, no, not a name, a number, searching for a name would be dumb and totally illogical.");
     string input = Console.ReadLine().ToLower().Trim();
     RestRequest request = new($"people/{input}/");
 
